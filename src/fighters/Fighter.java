@@ -6,7 +6,6 @@ public abstract class Fighter {
     protected int hp;
     protected int strength;
     protected int speed;
-    protected int specificAttribute;
 
     // getters/setters
 
@@ -30,18 +29,15 @@ public abstract class Fighter {
     }
 
 
-    public int getSpecificAttribute(){
-        return this.specificAttribute;
-    }
 
 
-    public Fighter(String name, int hp, int strength, int speed, int specificAttribute){
+
+    public Fighter(String name, int hp, int strength, int speed){
 
         this.name = name;
         this.hp = hp;
         this.strength = strength;
         this.speed = speed;
-        this.specificAttribute = specificAttribute;
 
     }
 
@@ -51,7 +47,6 @@ public abstract class Fighter {
         System.out.println("hp : " + hp);
         System.out.println("strenght : " + strength);
         System.out.println("speed : " + speed);
-        System.out.println("specificAttribute : " + specificAttribute);
     }
 
 

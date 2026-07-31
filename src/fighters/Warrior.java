@@ -3,8 +3,16 @@ package fighters;
 
 public class Warrior extends Fighter {
 
-    public Warrior(String name,int hp, int strength, int speed, int specificAttribute){
-        super(name, hp, strength, speed, specificAttribute);
+    private int rage;
+
+    public int getRage(){
+        return this.rage;
+    }
+
+    public Warrior(String name,int hp, int strength, int speed, int rage){
+        super(name, hp, strength, speed);
+        this.rage = rage;
+
 
         if (hp < 96 || hp > 106) {
             throw new IllegalArgumentException();
@@ -18,11 +26,16 @@ public class Warrior extends Fighter {
             throw new IllegalArgumentException();
         }
 
+        if (rage < 12 || rage > 18) {
+            throw new IllegalArgumentException();
+        }
+
     }
     @Override
     public void getInformation() {
 
         super.getInformation();
+        System.out.println("rage : " + rage);
 
     }
 
