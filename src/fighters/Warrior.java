@@ -13,20 +13,19 @@ public class Warrior extends Fighter {
         super(name, hp, strength, speed);
         this.rage = rage;
 
-
-        if (hp < 96 || hp > 106) {
+        if (getHp() < 96 || getHp() > 106) {
             throw new IllegalArgumentException();
         }
 
-        if (strength < 20 || strength > 24) {
+        if (getStrength() < 20 || getStrength() > 24) {
             throw new IllegalArgumentException();
         }
 
-        if (speed < 8 || speed > 12) {
+        if (getSpeed() < 8 || getSpeed() > 12) {
             throw new IllegalArgumentException();
         }
 
-        if (rage < 12 || rage > 18) {
+        if (getRage() < 12 || getRage() > 18) {
             throw new IllegalArgumentException();
         }
 

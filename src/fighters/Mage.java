@@ -12,19 +12,19 @@ public class Mage extends Fighter {
         super(name, hp, strength, speed);
         this.mana = mana;
 
-        if (hp < 88 || hp > 98) {
+        if (getHp() < 88 || getHp() > 98) {
             throw new IllegalArgumentException();
         }
 
-        if (strength < 14 || strength > 18) {
+        if (getStrength() < 14 || getStrength() > 18) {
             throw new IllegalArgumentException();
         }
 
-        if (speed < 18 || speed > 22) {
+        if (getSpeed() < 18 || getSpeed() > 22) {
             throw new IllegalArgumentException();
         }
 
-        if (mana < 32 || mana > 48) {
+        if (getMana() < 32 || getMana() > 48) {
             throw new IllegalArgumentException();
         }
 

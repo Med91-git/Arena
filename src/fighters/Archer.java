@@ -12,19 +12,19 @@ public class Archer extends Fighter{
         super(name,hp, strength, speed);
         this.precision = precision;
 
-        if (hp < 90 || hp > 100) {
+        if (getHp() < 90 || getHp() > 100) {
             throw new IllegalArgumentException();
         }
 
-        if (strength < 17 || strength > 21) {
+        if (getStrength() < 17 || getStrength() > 21) {
             throw new IllegalArgumentException();
         }
 
-        if (speed < 21 || speed > 25) {
+        if (getSpeed() < 21 || getSpeed() > 25) {
             throw new IllegalArgumentException();
         }
 
-        if (precision < 20 || precision > 30) {
+        if (getPrecision() < 20 || getPrecision() > 30) {
             throw new IllegalArgumentException();
         }
 

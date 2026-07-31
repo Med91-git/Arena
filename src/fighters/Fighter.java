@@ -2,10 +2,10 @@ package fighters;
 
 public abstract class Fighter {
 
-    protected String name;
-    protected int hp;
-    protected int strength;
-    protected int speed;
+    private String name;
+    private int hp;
+    private int strength;
+    private int speed;
 
     // getters/setters
 
