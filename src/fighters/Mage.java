@@ -37,4 +37,16 @@ public class Mage extends Fighter {
         System.out.println("mana : " + mana);
 
     }
+
+    @Override
+    public int specialAbility() {
+        return getSpeed()*2;
+    }
+
+    @Override
+    public int feat() {
+        return getMana()/8;
+    }
+
+
 }

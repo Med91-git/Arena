@@ -37,4 +37,18 @@ public class Archer extends Fighter{
         System.out.println("precision : " + precision);
 
     }
+
+    @Override
+    public int specialAbility() {
+        return getSpeed() + getStrength()/2;
+    }
+
+    @Override
+    public int feat() {
+        return getPrecision()/5;
+    }
+
+
+
+
 }

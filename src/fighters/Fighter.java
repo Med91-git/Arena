@@ -30,8 +30,6 @@ public abstract class Fighter {
 
 
 
-
-
     public Fighter(String name, int hp, int strength, int speed){
 
         this.name = name;
@@ -48,6 +46,19 @@ public abstract class Fighter {
         System.out.println("strenght : " + strength);
         System.out.println("speed : " + speed);
     }
+
+    public abstract int specialAbility();
+
+    public abstract int feat();
+
+    public int modifier() {
+       return getSpeed()/10;
+    }
+
+    public int power() {
+        return hp + strength + speed + specialAbility() + feat() + modifier();
+    }
+
 
 
 

@@ -38,5 +38,22 @@ public class Warrior extends Fighter {
 
     }
 
+    @Override
+    public int specialAbility() {
+        return this.getStrength() *2 - getSpeed();
+    }
+
+    @Override
+    public int feat() {
+        return getRage() / 3;
+    }
+
+    @Override
+    public int modifier() {
+        return getRage()/4;
+    }
+
+
+
 
 }

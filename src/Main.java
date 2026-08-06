@@ -13,9 +13,20 @@ void main() {
     Archer archer = new Archer("Archer",100, 17,21,29);
     Mage mage = new Mage("Mage",98, 14,18,32);
 
-    warrior.getInformation();
-    archer.getInformation();
-    mage.getInformation();
+    //warrior.getInformation();
+    //archer.getInformation();
+    //mage.getInformation();
+
+    int abilityResult = archer.specialAbility();
+    int featResult = archer.feat();
+    int modifierResult = archer.modifier();
+    int power = archer.power();
+
+    System.out.println("ability result : " + abilityResult);
+    System.out.println("feat result : " + featResult);
+    System.out.println("modifier result : " + modifierResult);
+    System.out.println("power result : " + power);
+
 
 
 

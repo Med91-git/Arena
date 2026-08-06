@@ -1,3 +1,5 @@
+package tests;
+
 import fighters.Warrior;
 import org.junit.jupiter.api.Test;
 
@@ -13,10 +15,14 @@ public class WarriorTest {
         // GIVEN : start data
 
         String name = "Alan";
-        int hp = 97;
-        int strength = 22;
-        int speed = 9;
+        int hp = 106;
+        int strength = 20;
+        int speed = 8;
         int rage = 12;
+        int specialAbility = 32;
+        int featValue = 4;
+        int modifierValue = 3;
+        int powerValue = 173;
 
         // WHEN : the action we are testing
 
@@ -30,6 +36,12 @@ public class WarriorTest {
         assertEquals(strength, warrior.getStrength());
         assertEquals(speed, warrior.getSpeed());
         assertEquals(rage, warrior.getRage());
+
+        assertEquals(specialAbility, warrior.specialAbility());
+        assertEquals(featValue, warrior.feat());
+        assertEquals(modifierValue, warrior.modifier());
+        assertEquals(powerValue, warrior.power());
+
 
     }
 
@@ -184,6 +196,9 @@ public class WarriorTest {
         // THEN : what we are expecting
         assertThrows(IllegalArgumentException.class, () -> new Warrior(name,hp,strength,speed,rage));
     }
+
+
+
 
 
 

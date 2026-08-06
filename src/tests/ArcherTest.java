@@ -1,3 +1,5 @@
+package tests;
+
 import fighters.Archer;
 import org.junit.jupiter.api.Test;
 
@@ -13,10 +15,15 @@ public class ArcherTest {
         // GIVEN : start data
 
         String name = "Médéric";
-        int hp = 95;
-        int strength = 19;
-        int speed = 23;
-        int precision = 23;
+        int hp = 100;
+        int strength = 17;
+        int speed = 21;
+        int precision = 29;
+
+        int specialAbility = 29;
+        int featValue = 5;
+        int modifierValue = 2;
+        int powerValue = 174;
 
         // WHEN : the action we are testing
 
@@ -30,6 +37,11 @@ public class ArcherTest {
         assertEquals(strength, archer.getStrength());
         assertEquals(speed, archer.getSpeed());
         assertEquals(precision, archer.getPrecision());
+
+        assertEquals(specialAbility, archer.specialAbility());
+        assertEquals(featValue, archer.feat());
+        assertEquals(modifierValue, archer.modifier());
+        assertEquals(powerValue, archer.power());
 
     }
 
