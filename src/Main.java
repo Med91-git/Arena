@@ -25,9 +25,9 @@ void main() {
     System.out.println("modifier result : " + modifierResult);
     System.out.println("power result : " + power);*/
 
-    FightManager.fight1v1(mage, archer);
+    FightManager.fight1v1(mage, warrior);
 
     System.out.println("pts puissance de " + mage.getName() + " : " + mage.power());
-    System.out.println("pts puissance de " + archer.getName() + " : " + archer.power());
+    System.out.println("pts puissance de " + warrior.getName() + " : " + warrior.power());
 
 }

@@ -2,11 +2,11 @@ package fighters;
 
 public class FightManager {
 
-    private static int score ;
-
     public static void fight1v1(Fighter fighterA, Fighter fighterB){
 
         // Launch the fighting (comparing power points between both fighters)
+
+        int score;
 
         if (fighterA.power() > fighterB.power()){
 
